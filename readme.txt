@@ -18,7 +18,7 @@ This plugin requires WooCommerce.
 
 == Screenshots ==
 
-screenshot.png
+1. CCBill Logo
 
 == Installation ==
 
