@@ -16,6 +16,10 @@ payments on your WooCommerce-enabled Wordpress Website.
 
 This plugin requires WooCommerce. 
 
+== Screenshots ==
+
+/assets/screenshot.png
+
 == Installation ==
 
 Installation involves the following steps:
