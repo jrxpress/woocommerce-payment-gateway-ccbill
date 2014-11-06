@@ -18,7 +18,7 @@ This plugin requires WooCommerce.
 
 == Screenshots ==
 
-/assets/screenshot.png
+screenshot.png
 
 == Installation ==
 
