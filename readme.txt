@@ -14,7 +14,7 @@ Accept CCBill payments on your WooCommerce website.
 The CCBill payment gateway plugin for WooCommerce allows you to easily configure and accept CCBill
 payments on your WooCommerce-enabled Wordpress Website.
 
-This plugin requires WooCommerce.
+This plugin requires WooCommerce. 
 
 == Installation ==
 
