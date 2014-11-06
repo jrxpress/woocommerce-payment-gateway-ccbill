@@ -16,10 +16,6 @@ payments on your WooCommerce-enabled Wordpress Website.
 
 This plugin requires WooCommerce. 
 
-== Screenshots ==
-
-1. CCBill Logo
-
 == Installation ==
 
 Installation involves the following steps:
