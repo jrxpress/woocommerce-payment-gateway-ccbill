@@ -311,19 +311,19 @@ function wc_gateway_ccbill_init(){
   		
   		switch(strToLower($responseAction)){
   		  case 'checkoutsuccess': //print('Checkout Success');
-  		                          wp_die('<p>Thank you for your order.  Your payment has been approved.</p><p><a href="' . get_permalink( get_option('woocommerce_myaccount_page_id') ) . '" title="' . _e('My Account','woothemes') . '">My Account</a></p><p><a href="?">Return Home</a></p>');
+  		                          wp_die('<p>Thank you for your order.  Your payment has been approved.</p><p><a href="' . get_permalink( get_option('woocommerce_myaccount_page_id') ) . '" title="' . _e('My Account','woothemes') . '">My Account</a></p><p><a href="?">Return Home</a></p>', array( 'response' => 200 ) );
   		    break;
   		  case 'checkoutfailure': //wp_die('Checkout Failure');
-  		                          wp_die('<p>Unfortunately, your payment was declined.</p><p><a href="' . $cart_url = $woocommerce->cart->get_cart_url() . '">Return to Cart</a></p>');
+  		                          wp_die('<p>Unfortunately, your payment was declined.</p><p><a href="' . $cart_url = $woocommerce->cart->get_cart_url() . '">Return to Cart</a></p>', array( 'response' => 200 ) );
   		    break;
   		  case 'approval_post':   //print('Approval Post');
   		                          
 	                              $order = new WC_Order( $_REQUEST['wc_orderid'] );
   						                  $order->add_order_note( __( 'PDT payment completed', 'woocommerce' ) );
   						                  $order->payment_complete();
-  						                  wp_die('Success');
+  						                  wp_die('Success', array( 'response' => 200 ) );
   		    break;
-  		  case 'denial_post':     wp_die('Failure');
+  		  case 'denial_post':     wp_die('Failure', array( 'response' => 200 ) );
   		    break;
   		  default: wp_die( "CCBill IPN Request Failure", "CCBill IPN", array( 'response' => 200 ) );
   		    break;

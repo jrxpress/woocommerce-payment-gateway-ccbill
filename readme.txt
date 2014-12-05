@@ -173,3 +173,5 @@ Your CCBill account is now configured. In your CCBill admin interface, navigate 
 = 1.0 =
 * Initial Release
 
+= 1.0.1 =
+* Resolved repeated postback when communicating with CCBill
